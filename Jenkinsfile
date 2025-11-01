@@ -42,7 +42,7 @@ pipeline {
                 script {
                     def buildfun = new edu.iti.docker()
                     buildfun.login("${dockerUserName}", "${dockerPassword}")
-                    buildfun.push("man218/java-repo", "${BUILD_NUMBER}")
+                    buildfun.push("ayman218/java-repo", "${BUILD_NUMBER}")
                 }
             }
         }
